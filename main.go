@@ -62,7 +62,7 @@ func (e *JsonAnalyzer) KeyAnalysis(expectedStruct any, jsonData []byte) (err err
 		}
 
 		if pass == false {
-			err = fmt.Errorf("there is a new key in the received json that was not predicted in the json handling code: key: %v", key)
+			err = fmt.Errorf("there is a new key in the received json that was not predicted in the json handling code. key: %v", key)
 			return
 		}
 	}
